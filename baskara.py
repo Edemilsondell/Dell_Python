@@ -6,10 +6,10 @@ print()
     Argumento não nomeado recebe apenas o argumento (valor)
 
 """
-
+import os
 import math
 
-""" a = input("Digite um numero para A:")
+a = input("Digite um numero para A:")
 b = input("Digite um numero para B:")
 c = input("Digite um numero para C:")
 
@@ -30,11 +30,13 @@ def calcular_baskara(a, b, c):
         return raiz
     else:
         return "Impossivel calcular."
+    
+    
 
 # Exemplo de uso da função
 # raizes = calcular_baskara(-7, 3, 5)
 # calcular_baskara(ax, bx, cx)
-raizes = calcular_baskara(ax, bx, cx)
+""" raizes = calcular_baskara(ax, bx, cx)
 print(raizes) """
 
 # def  soma(x, y):
@@ -53,9 +55,15 @@ print(raizes) """
 # subtrair(10, 5)
 
 # v1 = input("Digite os valores para A, B e C:\n").split()
-v1 = input("Digite os valores para A:\n")
-v2 = input("Digite os valores para B:\n")
-v3 = input("Digite os valores para C:\n")
+v1 = input("Digite os valores para A:")
+v2 = input("Digite os valores para B:")
+v3 = input("Digite os valores para C:")
+
+os.system("cls") # Limpa o terminal
+print("Primeira formula")
+raizes = calcular_baskara(ax, bx, cx)
+print(raizes)
+
 print()
 # a, b, c = v
 
@@ -65,6 +73,8 @@ c = float(v3)
 """ a = float(a)
 b = float(b)
 c = float(c) """
+print("Segunda formula")
+print()
 
 if a == 0.0  or (b ** 2 - 4 * a * c) < 0:
     print('Impossivel calcular')
