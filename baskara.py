@@ -33,28 +33,7 @@ def calcular_baskara(a, b, c):
     
     
 
-# Exemplo de uso da função
-# raizes = calcular_baskara(-7, 3, 5)
-# calcular_baskara(ax, bx, cx)
-""" raizes = calcular_baskara(ax, bx, cx)
-print(raizes) """
 
-# def  soma(x, y):
-#     print(x + y)
-
-# soma(10, 5)
-
-# def  mult(x, y):
-#     print(x * y)
-
-# mult(10, 5)
-
-# def  subtrair(x, y):
-#     print(x - y)
-
-# subtrair(10, 5)
-
-# v1 = input("Digite os valores para A, B e C:\n").split()
 v1 = input("Digite os valores para A:")
 v2 = input("Digite os valores para B:")
 v3 = input("Digite os valores para C:")
@@ -64,16 +43,17 @@ print("Primeira formula")
 raizes = calcular_baskara(ax, bx, cx)
 print(raizes)
 
+
 print()
-# a, b, c = v
 
 a = float(v1)
 b = float(v2)
 c = float(v3)
-""" a = float(a)
-b = float(b)
-c = float(c) """
+
+deltax =b**2 - 4*a*c
 print("Segunda formula")
+print()
+print("Delta", deltax)
 print()
 
 if a == 0.0  or (b ** 2 - 4 * a * c) < 0:
